@@ -103,6 +103,7 @@
     grid-area: box1;
     background-color: rgb(198, 198, 21);
     display: grid;
+    width: 35vw;
     grid-template-areas: 'img'
                             'btn';
     
@@ -113,6 +114,7 @@
     grid-area: box2;
     background-color: azure;
     display: grid;
+    width: 35vw;
     grid-template-areas: 'img'
                             'btn';
 }
@@ -121,6 +123,7 @@
     grid-area: box3;
     background-color: cornflowerblue;
     display: grid;
+    width: 35vw;
     grid-template-areas: 'img'
                             'btn';
 }
@@ -128,6 +131,7 @@
     grid-area: box4;
     background-color: aqua;
     display: grid;
+    width: 35vw;
     grid-template-areas: 'img'
                             'btn';
 }
@@ -135,6 +139,7 @@
     grid-area: box5;
     background-color: antiquewhite;
     display: grid;
+    width: 35vw;
     grid-template-areas: 'img'
                             'btn';
 }
@@ -142,18 +147,13 @@
     grid-area: box6;
     background-color: darkolivegreen;
     display: grid;
+    width: 35vw;
     grid-template-areas: 'img'
     'img'
     'img'
     'btn';
 
 } 
-/* .work img{
-    grid-area: img;
-}
-.work p{
-    grid-area: btn;
-} */
 
 #one:hover{
     cursor: pointer;
@@ -213,43 +213,47 @@
     color: brown;
 }
 
+.images{
+    object-fit: cover;
+}
+
 @media only screen and (min-width: 581px) and (max-width: 790px) {
   
-    /* .nav{
+    .nav{
         display: flex;
         justify-content: flex-end;
         width: 100vw;
         grid-area: nav;
         background-color: rgb(169, 46, 56);
-        height: 8vh;
+        height: 6vh;
         position: fixed;
         box-shadow: 1px 1px;
     
     
-    } */
-    /* .nav a{
+    }
+    .nav a{
         padding: 15px;
         font-size: 15px;
         text-decoration: none;
         color: white;
         font-family:'Lucida Sans', Geneva, Verdana, sans-serif
         
-    } */
-    /* .content h1{
+    }
+    .content h1{
         font-size: 40px;
         color: white;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
        
-    } */
-    /* .content p{
+    }
+    .content p{
         color: rgb(169, 59, 69);
         font-size: 25px;
         font-style: italic;
         
     
-    } */
+    }
 
-    /* .content1{
+    .content1{
         display: flex;
         height: 100vh;
         width: 100vw;
@@ -258,8 +262,8 @@
         align-items: center;
         justify-content: center;
         
-    } */
-    /* .heading-project{
+    }
+    .heading-project{
         width: 50%;
         border-bottom: 2px solid white;
         color:white;
@@ -268,9 +272,9 @@
         font-size: 13px;
         font-family: 'Trebuchet MS',  'Lucida Sans', Arial, sans-serif;
         
-    } */
+    }
     
-    /* .work{
+    .work{
         display: grid;
         grid-template-areas: 'box1 box2'
                             ' box3 box4 '
@@ -282,8 +286,11 @@
 
        
        
-    } */
+    }
 
+  }
+  .images{
+    object-fit: cover;
   }
 /* 
   @media only screen and (max-width: 580px )  {
