@@ -54,7 +54,6 @@
 }
 .content1 {
   display: flex;
-
   background-color: rgb(72, 86, 122);
   flex-direction: column;
   align-items: center;
@@ -85,6 +84,7 @@
   /* column-gap: 10%; */
   column-gap: 30px;
   row-gap:30px;
+
 }
 
 #one {
@@ -99,47 +99,34 @@
   grid-area: box2;
   background-color: azure;
   display: grid;
-  grid-template-areas:
-    "img"
-    "btn";
+ 
 }
 
 #three {
   grid-area: box3;
   background-color: cornflowerblue;
   display: grid;
-  grid-template-areas:
-    "img"
-    "btn";
+ 
 }
 #four {
   grid-area: box4;
   background-color: aqua;
   display: grid;
 
-  grid-template-areas:
-    "img"
-    "btn";
+ 
 }
 #five {
   grid-area: box5;
   background-color: antiquewhite;
   display: grid;
 
-  grid-template-areas:
-    "img"
-    "btn";
+ 
 }
 #six {
   grid-area: box6;
   background-color: darkolivegreen;
   display: grid;
 
-  grid-template-areas:
-    "img"
-    "img"
-    "img"
-    "btn";
 }
 
 #one:hover {
