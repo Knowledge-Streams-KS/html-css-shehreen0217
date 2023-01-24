@@ -75,20 +75,37 @@ html{
     margin-top: 3rem;
 }
 
+/* Slideshow container */
 .work {
-  display: grid;
-  grid-template-areas:
-    "box1 box2 box3"
-    " box4 box5 box6";
-  justify-items: center;
-  align-items: space-between;
-  margin: 10%;
-  margin-top: 50px;
-  /* row-gap: 20%;  */
-  /* column-gap: 10%; */
-  column-gap: 30px;
-  row-gap:30px;
+
+  max-width: 100vw;
+  position: relative;
+  margin: auto;
+  margin: 10% 10%;
 }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
 
 #one {
   grid-area: box1;
@@ -128,42 +145,44 @@ html{
 
 }
 
-#one:hover {
-  cursor: pointer;
-}
-#two:hover {
-  cursor: pointer;
-}
-#three:hover {
-  cursor: pointer;
-}
-#four:hover {
-  cursor: pointer;
-}
-#five:hover {
-  cursor: pointer;
-}
-#six:hover {
+.mySlides:hover {
   cursor: pointer;
 }
 
-#one:hover .sign {
+
+.mySlides:hover .sign {
   display: block;
 }
-#two:hover .sign {
-  display: block;
+
+#agency{
+  color:rgb(165, 58, 42);
+  font-weight: 30;
+
 }
-#three:hover .sign {
-  display: block;
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
-#four:hover .sign {
-  display: block;
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
-#five:hover .sign {
-  display: block;
+.active, .dot:hover {
+  background-color: #717171;
 }
-#six:hover .sign {
-  display: block;
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 .box-title {
   background-color: rgb(62, 61, 61);
