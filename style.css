@@ -9,6 +9,9 @@
     "nav"
     "content";
 }
+html{
+  scroll-behavior: smooth;
+}
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -54,6 +57,7 @@
 }
 .content1 {
   display: flex;
+
   background-color: rgb(72, 86, 122);
   flex-direction: column;
   align-items: center;
@@ -84,16 +88,13 @@
   /* column-gap: 10%; */
   column-gap: 30px;
   row-gap:30px;
-
 }
 
 #one {
   grid-area: box1;
   background-color: rgb(198, 198, 21);
   display: grid;
-  grid-template-areas:
-    "img"
-    "btn";
+  
 }
 #two {
   grid-area: box2;
@@ -113,14 +114,12 @@
   background-color: aqua;
   display: grid;
 
- 
 }
 #five {
   grid-area: box5;
   background-color: antiquewhite;
   display: grid;
 
- 
 }
 #six {
   grid-area: box6;
@@ -197,17 +196,49 @@
   color: white;
   align-items: center;
   flex-direction: column;
+ 
+  
 }
 .content2 h1{
-  font-size: 50px;
-  margin: 5px;
+  font-size: 3rem;
+  margin-top: 5%;
+ 
   
 }
 
+.coffee{
+  padding: 1rem;
+  font-style: italic;
+  font-size: 1.5rem;
+}
 .links{
   display: flex;
-  margin: 5%;
+  margin-bottom: 5%;
   justify-content: space-evenly;
+  padding: 10%;
+  width: 100vw;
+  border-bottom: 5px solid red;
+
+}
+.links p{
+
+  padding: 1.5rem;
+  font-size: 2rem;
+}
+.icons{
+  display: flex;
+  justify-content: baseline;
+}
+
+.footer{
+  display: flex;
+
+}
+.footer p{
+  padding: 20px;
+  font-weight:300;
+  font-size: 1.5rem;
+  font-family: Cambria, Cochin, 'Times New Roman', serif;
 }
 
 /* @media only screen and (min-width: 581px) and (max-width: 790px) {
